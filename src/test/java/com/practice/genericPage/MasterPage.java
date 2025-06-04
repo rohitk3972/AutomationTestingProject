@@ -21,7 +21,7 @@ public class MasterPage {
 	//Constructor Implementation
 	public MasterPage() throws IOException {
 		
-	    FileInputStream ip = new FileInputStream("/com.practice.env/src/main/resources/com/practice/repository/configuration.properties");
+	    FileInputStream ip = new FileInputStream("/com.practice.env/src/test/resources/com/practice/resources/configuration.properties");
 	    prop= new Properties();
 	    prop.load(ip);
 	    
@@ -44,7 +44,7 @@ public class MasterPage {
 	    	WebDriverManager.edgedriver().setup();
 	    	driver=new EdgeDriver();
 	    } else if(prop.getProperty("browser").equalsIgnoreCase("chrome2")) {
-	    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") +"/com.practice.env/src/main/resources/com/practice/driver/chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") +"/com.practice.env/src/test/resources/com/practice/driver/chromedriver.exe");
 	        driver= new ChromeDriver();
 	    } else {
 	    	System.out.println("No Browsr Details Found");

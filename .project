@@ -22,7 +22,7 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>src/main/resources/com/practice/driver/chromedriver.exe</name>
+			<name>src/test/resources/com/practice/driver/chromedriver.exe</name>
 			<type>1</type>
 			<location>D:/Software/chromedriver-win64/chromedriver-win64/chromedriver.exe</location>
 		</link>
