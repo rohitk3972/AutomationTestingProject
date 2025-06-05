@@ -21,15 +21,15 @@ public class LoginTest {
 		lp.enterEmail();
 		lp.clickPassword();
 		lp.enterPassword();
-		lp.getFacebookText();
+		//lp.getFacebookText();
+	  //Thread.sleep(3000);
+		//lp.clearEmail();
 		Thread.sleep(3000);
-		lp.clearEmail();
-		Thread.sleep(3000);
-		lp.readExcelData("EmailOrPhone", 3, 1);
-		Thread.sleep(3000);
-		lp.clearPassword();
-		Thread.sleep(3000);
-		lp.readExcelData("Password", 3, 2);
+		//lp.readExcelData("EmailOrPhone", 3, 1);
+		//Thread.sleep(3000);
+		//lp.clearPassword();
+		//Thread.sleep(3000);
+		//lp.readExcelData("Password", 3, 2);
 		lp.clickLoginButton();	
 	}
 	

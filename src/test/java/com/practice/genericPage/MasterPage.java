@@ -21,15 +21,15 @@ public class MasterPage {
 	//Constructor Implementation
 	public MasterPage() throws IOException {
 		
-	    FileInputStream ip = new FileInputStream("/com.practice.env/src/test/resources/com/practice/resources/configuration.properties");
+	    FileInputStream ip = new FileInputStream(".\\src\\test\\resources\\com\\practice\\resources\\configuration.properties");
 	    prop= new Properties();
 	    prop.load(ip);
 	    
-	    FileInputStream fs= new FileInputStream("/com.practice.env/src/test/resources/com/practice/resources/Locators.properties");
+	    FileInputStream fs= new FileInputStream(".\\src\\test\\resources\\com\\practice\\resources\\Locators.properties");
 	    or=new Properties();
 	    or.load(fs);
 	    
-	    FileInputStream ts= new FileInputStream("/com.practice.env/src/test/resources/com/practice/resources/testdata.properties");
+	    FileInputStream ts= new FileInputStream(".\\src\\test\\resources\\com\\practice\\resources\\testdata.properties");
 	    td=new Properties();
 	    td.load(ts);
 	    
