@@ -15,19 +15,19 @@ public class LoginPage extends CommonMethods {
 
 	//click email
 	public void clickEmail() {
-		clickWebElement("EmailOrPhone");
+		clickWebElement("Username");
 		handleLogger("LoginPage","Clicked on Email");
 	}
 
 	//clear email
 	public void clearEmail() {
-		clearData("EmailOrPhone");
+		clearData("Username");
 		handleLogger("LoginPage","Cleared Email");
 	}
 	
 	//enter email
 	public void enterEmail() {
-		enterData("EmailOrPhone","TestData1");
+		enterData("Username","TestData1");
 		handleLogger("LoginPage","Entered Email");
 		
 	}
@@ -51,10 +51,10 @@ public class LoginPage extends CommonMethods {
 	}
 
 	//get text
-	public String getFacebookText() {
+	public String getText() {
 		String abc="";
-		getWebElementText("FacebookText");
-		handleLogger("LoginPage","Get facebook Text");
+		getWebElementText("AccountServicesText");
+		handleLogger("LoginPage","Get Account Services Text");
 		return abc;
 	}
 
@@ -65,11 +65,6 @@ public class LoginPage extends CommonMethods {
 		
 	}
 	
-	public void blockNotification() {
-		dismissAlert();
-		handleLogger("LoginPage","Dismiss Show Notification");
-		
-	}	
 		
 	}	
 

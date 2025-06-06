@@ -128,5 +128,11 @@ public class CommonMethods extends MasterPage {
 		}
 	}
 	
+	//count webelement
+	public int countWebElements(String xpathkey) {
+		List<WebElement> noOfWebElement= driver.findElements(By.xpath(xpathkey));
+		int countOfWebElement =noOfWebElement.size();
+	    return countOfWebElement;
+	}
 
 }

@@ -24,7 +24,7 @@ public class LoginTest {
 		lp.enterPassword();
 		lp.clickLoginButton();
 		Thread.sleep(30000);
-		Assert.assertEquals(lp.getFacebookText(),"Friedns");
+		Assert.assertEquals(lp.getText(),"Account Services");
 	  //  Thread.sleep(3000);
 		//lp.clearEmail();
 		//Thread.sleep(3000);
