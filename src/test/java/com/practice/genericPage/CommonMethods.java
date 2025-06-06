@@ -75,6 +75,13 @@ public class CommonMethods extends MasterPage {
 		webElem.selectByVisibleText(td.getProperty(testdata));
 	}
 
+	
+	//Accept alert
+	
+	public void dismissAlert() {
+		driver.switchTo().alert().dismiss();
+	}
+	
 	//Reading excel data
 	public void readExcelData(String xpathkey, int rowNo, int columnNo) throws IOException{
 		File src= new File(".\\src\\test\\resources\\com\\practice\\resources\\ExcelTestData.xlsx");

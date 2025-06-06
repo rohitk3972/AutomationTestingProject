@@ -2,6 +2,7 @@ package com.practice.tests;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -21,16 +22,18 @@ public class LoginTest {
 		lp.enterEmail();
 		lp.clickPassword();
 		lp.enterPassword();
-		//lp.getFacebookText();
-	  //Thread.sleep(3000);
+		lp.clickLoginButton();
+		Thread.sleep(30000);
+		Assert.assertEquals(lp.getFacebookText(),"Friedns");
+	  //  Thread.sleep(3000);
 		//lp.clearEmail();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		//lp.readExcelData("EmailOrPhone", 3, 1);
 		//Thread.sleep(3000);
 		//lp.clearPassword();
 		//Thread.sleep(3000);
 		//lp.readExcelData("Password", 3, 2);
-		lp.clickLoginButton();	
+			
 	}
 	
 	@AfterMethod

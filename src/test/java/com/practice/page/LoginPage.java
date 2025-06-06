@@ -51,9 +51,11 @@ public class LoginPage extends CommonMethods {
 	}
 
 	//get text
-	public void getFacebookText() {
+	public String getFacebookText() {
+		String abc="";
 		getWebElementText("FacebookText");
 		handleLogger("LoginPage","Get facebook Text");
+		return abc;
 	}
 
 	//click login button
@@ -61,5 +63,13 @@ public class LoginPage extends CommonMethods {
 		clickWebElement("LoginButton");
 		handleLogger("LoginPage","Clicked Login Button");
 		
+	}
+	
+	public void blockNotification() {
+		dismissAlert();
+		handleLogger("LoginPage","Dismiss Show Notification");
+		
 	}	
-}
+		
+	}	
+
